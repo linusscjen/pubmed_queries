@@ -1,0 +1,12 @@
+[project]
+name = "pubmed-queries"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "bio>=1.8.1",
+    "dotenv>=0.9.9",
+    "jupyter>=1.1.1",
+    "pandas>=3.0.2",
+]
