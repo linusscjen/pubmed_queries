@@ -66,11 +66,15 @@ COUNTRIES = [
 # BUILD QUERY
 # -----------------------------
 def build_query(journal):
-    article_filter = " OR ".join([f'"{t}"[Publication Type]' for t in ARTICLE_TYPES])
+    # article_filter = " OR ".join([f'"{t}"[Publication Type]' for t in ARTICLE_TYPES])
 
+    # return f"""
+    # ("{journal}"[Journal])
+    # AND ({article_filter})
+    # AND ("2016/01/01"[PDAT] : "2025/12/31"[PDAT])
+    # """
     return f"""
     ("{journal}"[Journal])
-    AND ({article_filter})
     AND ("2016/01/01"[PDAT] : "2025/12/31"[PDAT])
     """
 
