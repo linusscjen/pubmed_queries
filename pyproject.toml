@@ -8,5 +8,6 @@ dependencies = [
     "bio>=1.8.1",
     "dotenv>=0.9.9",
     "jupyter>=1.1.1",
+    "openpyxl>=3.1.5",
     "pandas>=3.0.2",
 ]
